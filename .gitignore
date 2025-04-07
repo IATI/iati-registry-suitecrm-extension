@@ -1,0 +1,6 @@
+# PHP
+vendor/
+.php-cs-fixer.cache
+
+# Python environments
+.ve/

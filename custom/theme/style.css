@@ -1,0 +1,11 @@
+.suitepicon-module-iati-datasets::before {
+    content: "\f118";
+}
+
+.suitepicon-module-iati-dataset-actions::before {
+    content: "\f118";
+}
+
+.suitepicon-module-iati-organisation-actions::before {
+    content: "\f118";
+}

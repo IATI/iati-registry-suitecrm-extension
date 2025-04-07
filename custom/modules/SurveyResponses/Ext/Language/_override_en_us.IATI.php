@@ -1,0 +1,4 @@
+<?php
+
+$mod_strings['LBL_SURVEYRESPONSES_ACCOUNTS_FROM_ACCOUNTS_TITLE'] = 'Organisation';
+$mod_strings['LBL_SURVEYRESPONSES_CONTACTS_FROM_CONTACTS_TITLE'] = 'Person';

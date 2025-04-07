@@ -1,0 +1,7 @@
+-r requirements.in
+
+pip-tools
+isort
+flake8
+Flake8-pyproject
+black
