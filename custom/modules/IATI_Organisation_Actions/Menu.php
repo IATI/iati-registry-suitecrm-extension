@@ -53,3 +53,6 @@ if (ACLController::checkAccess('IATI_Organisation_Actions', 'edit', true)) {
 if (ACLController::checkAccess('IATI_Organisation_Actions', 'list', true)) {
     $module_menu[] = array('index.php?module=IATI_Organisation_Actions&action=index&return_module=IATI_Organisation_Actions&return_action=DetailView', $mod_strings['LNK_LIST'],'View', 'IATI_Organisation_Actions');
 }
+if (ACLController::checkAccess('IATI_Organisation_Actions', 'import', true)) {
+    $module_menu[] = array('index.php?module=Import&action=Step1&import_module=IATI_Organisation_Actions&return_module=IATI_Organisation_Actions&return_action=index', $app_strings['LBL_IMPORT'], 'Import', 'IATI_Organisation_Actions');
+}

@@ -48,7 +48,7 @@ class IATI_Organisation_Actions extends Basic
     public $module_dir = 'IATI_Organisation_Actions';
     public $object_name = 'IATI_Organisation_Actions';
     public $table_name = 'iati_org_actions';
-    public $importable = false;
+    public $importable = true;
 
     public $id;
     public $name;
