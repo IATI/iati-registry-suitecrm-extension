@@ -26,6 +26,7 @@ $mod_strings['LBL_IATI_MAILING_LIST_SUBSCRIBER'] = 'Mailing List Subscriber';
 $mod_strings['LBL_IATI_ONLINE_NAME'] = 'Online Name';
 $mod_strings['LBL_IATI_PREFERRED_LANGUAGE'] = 'Preferred Language';
 $mod_strings['LBL_IATI_TIMEZONE'] = 'Time Zone';
+$mod_strings['LBL_IATI_IDENTITYSERVICE_ID'] = 'Identity Service ID';
 
 // labels for associating organisation and dataset actions with people
 $mod_strings['LBL_IATI_DATASETS_CREATOR_PERSON_FROM_IATI_DATASETS_TITLE'] = 'Created IATI Datasets';

@@ -215,8 +215,15 @@ array(
             'label' => 'LBL_ASSIGNED_TO_NAME',
           ),
         ),
+        6 =>
+        array(
+          0 =>
+          array(
+            'name' => 'iati_identityservice_id_c',
+            'label' => 'LBL_IATI_IDENTITYSERVICE_ID',
+          ),
+        ),
       ),
     ),
-  ),
+  )
 );
-;
