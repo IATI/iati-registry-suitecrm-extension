@@ -80,7 +80,10 @@ $mod_strings = array(
   'LBL_NEW_FORM_TITLE' => 'New IATI Dataset Actions',
   'LBL_IATI_ACTION_TYPE' => 'Action Type',
   'LBL_IATI_USER_APPLICATION' => 'User Application',
-  'LBL_IATI_DATASET_ACTION_ACTOR_PERSON_NAME' => 'Action Performed By',
+  'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_NAME' => 'Action Performed By',
+  'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_ID' => 'Action Performed By Id',
+  'LBL_IATI_DATASET_ACTIONS_CHANGED_DATASET_NAME' => 'Dataset Changed',
+  'LBL_IATI_DATASET_ACTIONS_CHANGED_DATASET_ID' => 'Dataset Changed Id',
   'LNK_IMPORT_IATI_ORGANISATION_ACTIONS1' => 'Import Dataset Actions',
   'LNK_IMPORT_IATI_DATASET_ACTIONS' => 'Import IATI Dataset Actions',
 );
