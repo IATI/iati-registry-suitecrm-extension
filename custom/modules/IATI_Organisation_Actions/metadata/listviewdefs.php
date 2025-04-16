@@ -10,11 +10,25 @@ array(
     'width' => '10%',
     'default' => true,
   ),
+  'IATI_ORG_ACTIONS_CHANGED_ORG_NAME' =>
+  array(
+    'type' => 'varchar',
+    'label' => 'LBL_CHANGED_ORG',
+    'width' => '10%',
+    'default' => true,
+  ),
   'IATI_ACTION_TYPE' =>
   array(
     'type' => 'enum',
     'studio' => 'visible',
     'label' => 'LBL_IATI_ACTION_TYPE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'IATI_ORG_ACTIONS_ACTOR_PERSON_NAME' =>
+  array(
+    'type' => 'varchar',
+    'label' => 'LBL_ACTOR_PERSON',
     'width' => '10%',
     'default' => true,
   ),
