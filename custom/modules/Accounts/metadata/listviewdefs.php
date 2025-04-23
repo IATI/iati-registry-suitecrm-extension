@@ -39,6 +39,14 @@ array(
     'label' => 'LBL_IATI_ORG_TYPE',
     'width' => '10%',
   ),
+  'IATI_REGISTRY_APPROVED_C' =>
+  array(
+    'type' => 'bool',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_IATI_REGISTRY_APPROVED',
+    'width' => '10%'
+  ),
   'ACCOUNT_TYPE' =>
   array(
     'width' => '10%',

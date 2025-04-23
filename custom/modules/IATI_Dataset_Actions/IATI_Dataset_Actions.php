@@ -48,7 +48,7 @@ class IATI_Dataset_Actions extends Basic
     public $module_dir = 'IATI_Dataset_Actions';
     public $object_name = 'IATI_Dataset_Actions';
     public $table_name = 'iati_dataset_actions';
-    public $importable = false;
+    public $importable = true;
 
     public $id;
     public $name;

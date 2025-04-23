@@ -106,7 +106,7 @@ $dictionary['IATI_Organisation_Actions'] = array(
       'boost' => 3,
     ),
     'required' => false,
-    'importable' => 'required',
+    'importable' => true,
     'duplicate_merge' => 'enabled',
     'merge_filter' => 'selected',
     'massupdate' => 0,

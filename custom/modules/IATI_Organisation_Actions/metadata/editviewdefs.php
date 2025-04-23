@@ -64,9 +64,23 @@ array(
             'label' => 'LBL_IATI_USER_APPLICATION',
           ),
         ),
-        4 =>
+
+        2 =>
         array(
-          0 => 'description',
+          0 =>
+          array(
+            'name' => 'iati_org_actions_actor_person_name',
+            'label' => 'LBL_ACTOR_PERSON',
+          ),
+        ),
+
+        3 =>
+        array(
+          0 =>
+          array(
+            'name' => 'iati_org_actions_changed_org_name',
+            'label' => 'LBL_CHANGED_ORG',
+          ),
         ),
       ),
     ),

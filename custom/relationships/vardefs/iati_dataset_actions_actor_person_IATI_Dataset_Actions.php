@@ -7,14 +7,14 @@ $dictionary["IATI_Dataset_Actions"]["fields"]["iati_dataset_actions_actor_person
   'source' => 'non-db',
   'module' => 'Contacts',
   'bean_name' => 'Contact',
-  'vname' => 'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_FROM_CONTACTS_TITLE',
+  'vname' => '',
   'id_name' => 'iati_dataset_actions_actor_personcontacts_ida',
 );
 $dictionary["IATI_Dataset_Actions"]["fields"]["iati_dataset_actions_actor_person_name"] = array(
   'name' => 'iati_dataset_actions_actor_person_name',
   'type' => 'relate',
   'source' => 'non-db',
-  'vname' => 'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_FROM_CONTACTS_TITLE',
+  'vname' => 'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_NAME',
   'save' => true,
   'id_name' => 'iati_dataset_actions_actor_personcontacts_ida',
   'link' => 'iati_dataset_actions_actor_person',
@@ -34,5 +34,5 @@ $dictionary["IATI_Dataset_Actions"]["fields"]["iati_dataset_actions_actor_person
   'source' => 'non-db',
   'reportable' => false,
   'side' => 'right',
-  'vname' => 'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_FROM_IATI_DATASET_ACTIONS_TITLE',
+  'vname' => 'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_ID',
 );

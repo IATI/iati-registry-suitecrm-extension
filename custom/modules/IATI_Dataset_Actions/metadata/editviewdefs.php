@@ -38,7 +38,7 @@ array(
       array(
         0 =>
         array(
-          1 =>
+          0 =>
           array(
             'name' => 'iati_action_type',
             'studio' => 'visible',
@@ -63,12 +63,17 @@ array(
           0 =>
           array(
             'name' => 'iati_dataset_actions_actor_person_name',
-            'label' => 'LBL_IATI_DATASET_ACTION_ACTOR_PERSON_NAME'
+            'label' => 'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_NAME',
           ),
         ),
         3 =>
         array(
           0 =>
+          array(
+            'name' => 'iati_dataset_actions_changed_dataset_name',
+            'label' => 'LBL_IATI_DATASET_ACTIONS_CHANGED_DATASET_NAME',
+          ),
+          1 =>
           array(
             'name' => 'date_entered',
             'comment' => 'Date record created',

@@ -30,6 +30,7 @@ $mod_strings['LBL_IATI_IDENTIFIER'] = 'IATI Identifier';
 $mod_strings['LBL_IATI_ORG_TYPE'] = 'IATI Organisation Type';
 $mod_strings['LBL_IATI_REPORTING_SOURCE_TYPE'] = 'Reporting Source Type';
 $mod_strings['LBL_IATI_SHORT_NAME'] = 'Short Name';
+$mod_strings['LBL_IATI_REGISTRY_APPROVED'] = "Approved to publish";
 
 // labels for relating datasets and dataset actions to organisations
 $mod_strings['LBL_IATI_DATASETS_OWNER_ORG_FROM_IATI_DATASETS_TITLE'] = 'IATI Datasets';

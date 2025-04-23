@@ -188,10 +188,13 @@ $viewdefs['Accounts'] =
           array(
             0 =>
             array(
+              'name' => 'iati_registry_approved_c',
+              'label' => 'LBL_IATI_REGISTRY_APPROVED',
+            ),
+            1 => array(
               'name' => 'iati_first_publish_date_c',
               'label' => 'LBL_IATI_FIRST_PUBLISH_DATE',
             ),
-            1 => '',
           ),
           1 =>
           array(
