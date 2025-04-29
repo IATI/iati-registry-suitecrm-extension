@@ -22,9 +22,9 @@ $manifest = array(
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'IATI_Registry',
-  'published_date' => '2025-04-07',
+  'published_date' => '2025-04-28',
   'type' => 'module',
-  'version' => '0.1.0',
+  'version' => '0.2.0',
   'remove_tables' => 'prompt',
   'copy_files' => array(
   )
