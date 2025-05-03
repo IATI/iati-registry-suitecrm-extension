@@ -59,10 +59,9 @@ array(
           ),
           1 =>
           array(
-            'name' => 'iati_source_type',
-            'studio' => 'visible',
-            'label' => 'LBL_IATI_SOURCE_TYPE',
-          ),
+            'name' => 'iati_visibility',
+            'label' => 'LBL_IATI_VISIBILITY'
+          )
         ),
         2 =>
         array(
@@ -98,8 +97,9 @@ array(
         array(
           0 =>
           array(
-            'name' => 'iati_ckan_id',
-            'label' => 'LBL_IATI_CKAN_ID',
+            'name' => 'iati_source_type',
+            'studio' => 'visible',
+            'label' => 'LBL_IATI_SOURCE_TYPE',
           ),
         ),
         6 =>

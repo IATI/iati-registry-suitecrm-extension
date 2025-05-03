@@ -62,7 +62,11 @@ $subpanel_layout = array(
         'iati_short_name' => array(
             'vname' => 'LBL_IATI_SHORT_NAME',
             'widget_class' => 'SubPanelDetailViewLink',
-            'width' => '20%',
+            'width' => '15%',
+        ),
+        'iati_visibility' => array(
+            'vname' => 'LBL_IATI_VISIBILITY',
+            'width' => '5%',
         ),
         'iati_dataset_url' => array(
             'vname' => 'LBL_IATI_DATASET_URL',
