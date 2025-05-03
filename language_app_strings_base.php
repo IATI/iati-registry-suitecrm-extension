@@ -41,6 +41,7 @@ $app_list_strings['iati_dataset_action_type_dom'] = array (
   'create' => 'Create',
   'update_metadata' => 'Update metadata',
   'update_url' => 'Update dataset url',
+  'republish' => 'Republish',
   'delete' => 'Delete',
 );
 
