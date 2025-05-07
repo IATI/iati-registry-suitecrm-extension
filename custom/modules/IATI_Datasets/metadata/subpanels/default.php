@@ -55,26 +55,34 @@ $subpanel_layout = array(
     'where' => '',
 
     'list_fields' => array(
-        'name' => array(
-            'vname' => 'LBL_NAME',
+        'date_entered' => array(
+            'vname' => 'LBL_DATE_ENTERED',
+            'width' => '15%',
+        ),
+        'iati_short_name' => array(
+            'vname' => 'LBL_IATI_SHORT_NAME',
             'widget_class' => 'SubPanelDetailViewLink',
-            'width' => '45%',
+            'width' => '15%',
         ),
-        'date_modified' => array(
-            'vname' => 'LBL_DATE_MODIFIED',
-            'width' => '45%',
-        ),
-        'edit_button' => array(
-            'vname' => 'LBL_EDIT_BUTTON',
-            'widget_class' => 'SubPanelEditButton',
-            'module' => $module_name,
-            'width' => '4%',
-        ),
-        'remove_button' => array(
-            'vname' => 'LBL_REMOVE',
-            'widget_class' => 'SubPanelRemoveButton',
-            'module' => $module_name,
+        'iati_visibility' => array(
+            'vname' => 'LBL_IATI_VISIBILITY',
             'width' => '5%',
+        ),
+        'iati_dataset_url' => array(
+            'vname' => 'LBL_IATI_DATASET_URL',
+            'width' => '20%',
+        ),
+        'iati_metadata_update_date' => array(
+            'vname' => 'LBL_IATI_METADATA_UPDATE_DATE',
+            'width' => '15%',
+        ),
+        'iati_url_update_date' => array(
+            'vname' => 'LBL_IATI_URL_UPDATE_DATE',
+            'width' => '15%',
+        ),
+        'iati_datasets_owner_org_name' => array(
+            'vname' => 'LBL_IATI_DATASET_OWNER_ORG',
+            'width' => '15%',
         ),
     ),
 );

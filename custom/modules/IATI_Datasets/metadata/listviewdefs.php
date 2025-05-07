@@ -8,13 +8,21 @@ array(
     'type' => 'name',
     'link' => true,
     'label' => 'LBL_NAME',
-    'width' => '10%',
+    'width' => '20%',
     'default' => true,
   ),
   'IATI_SHORT_NAME' =>
   array(
     'type' => 'varchar',
     'label' => 'LBL_IATI_SHORT_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'IATI_VISIBILITY' =>
+  array(
+    'type' => 'enum',
+    'studio' => 'visible',
+    'label' => 'LBL_IATI_VISIBILITY',
     'width' => '10%',
     'default' => true,
   ),
@@ -53,7 +61,7 @@ array(
   array(
     'type' => 'url',
     'label' => 'LBL_IATI_DATASET_URL',
-    'width' => '10%',
+    'width' => '20%',
     'default' => true,
   ),
 );

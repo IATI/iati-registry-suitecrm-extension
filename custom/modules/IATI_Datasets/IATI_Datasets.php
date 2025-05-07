@@ -73,6 +73,7 @@ class IATI_Datasets extends Basic
     public $iati_short_name;
     public $iati_source_type;
     public $iati_dataset_url;
+    public $iati_visibility;
 
     public function bean_implements($interface)
     {

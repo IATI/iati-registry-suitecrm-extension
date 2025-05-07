@@ -42,9 +42,16 @@ $app_list_strings['iati_dataset_action_type_dom'] = array(
   'create' => 'Create',
   'update_metadata' => 'Update metadata',
   'update_url' => 'Update dataset url',
+  'republish' => 'Republish',
+  'change_visibility' => 'Change visibility',
   'delete' => 'Delete',
 );
 
+/* Drop down for Dataset visibility */
+$app_list_strings['iati_dataset_visibility_dom'] = array(
+  'private' => 'Private',
+  'public' => 'Public'
+);
 /* Dropdowns for organisation types from the codelist */
 $app_list_strings['iati_org_type_dom'] = array(
   '' => '',
@@ -620,6 +627,7 @@ $app_list_strings['iati_licence_dom'] = array(
   'xnet' => "OSI Approved::X.Net License",
   'zpl' => "OSI Approved::Zope Public License",
   'zlib-license' => "OSI Approved::zlib/libpng license",
+  'gfdl' => "GNU Free Documentation License",
 );
 
 /* Dropdowns for reporting source types */
