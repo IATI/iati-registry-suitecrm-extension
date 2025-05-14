@@ -88,7 +88,8 @@ $mod_strings = array(
   'LBL_IATI_DATASET_URL' => 'Dataset URL',
   'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
   'LBL_IATI_DATASET_OWNER_ORG' => 'Owner Organisation',
-  'LBL_IATI_DATASET_CREATOR_PERSON' => 'Creator Person'
+  'LBL_IATI_DATASET_CREATOR_PERSON' => 'Creator Person',
+  'LBL_IATI_VISIBILITY' => 'Visibility'
 );
 
 // relationships

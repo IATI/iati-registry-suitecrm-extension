@@ -98,6 +98,7 @@ LICENCES = {
     "xnet": "OSI Approved::X.Net License",
     "zpl": "OSI Approved::Zope Public License",
     "zlib-license": "OSI Approved::zlib/libpng license",
+    "gfdl": "GNU Free Documentation License",
 }
 
 
