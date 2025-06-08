@@ -14,8 +14,8 @@ $dictionary["iati_datasets_owner_org"] = array(
       'rhs_key' => 'id',
       'relationship_type' => 'many-to-many',
       'join_table' => 'iati_datasets_owner_org_c',
-      'join_key_lhs' => 'iati_datasets_owner_orgaccounts_ida',
-      'join_key_rhs' => 'iati_datasets_owner_orgiati_datasets_idb',
+      'join_key_lhs' => 'owner_org_id',
+      'join_key_rhs' => 'iati_dataset_id',
     ),
   ),
   'table' => 'iati_datasets_owner_org_c',
@@ -42,13 +42,13 @@ $dictionary["iati_datasets_owner_org"] = array(
     ),
     3 =>
     array(
-      'name' => 'iati_datasets_owner_orgaccounts_ida',
+      'name' => 'owner_org_id',
       'type' => 'varchar',
       'len' => 36,
     ),
     4 =>
     array(
-      'name' => 'iati_datasets_owner_orgiati_datasets_idb',
+      'name' => 'iati_dataset_id',
       'type' => 'varchar',
       'len' => 36,
     ),
@@ -70,7 +70,7 @@ $dictionary["iati_datasets_owner_org"] = array(
       'type' => 'index',
       'fields' =>
       array(
-        0 => 'iati_datasets_owner_orgaccounts_ida',
+        0 => 'owner_org_id',
       ),
     ),
     2 =>
@@ -79,7 +79,7 @@ $dictionary["iati_datasets_owner_org"] = array(
       'type' => 'alternate_key',
       'fields' =>
       array(
-        0 => 'iati_datasets_owner_orgiati_datasets_idb',
+        0 => 'iati_dataset_id',
       ),
     ),
   ),
