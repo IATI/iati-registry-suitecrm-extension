@@ -183,7 +183,7 @@ $viewdefs['Accounts'] =
           array(
             0 =>
             array(
-              'name' => 'iati_short_name_c',
+              'name' => 'iati_short_name',
               'label' => 'LBL_IATI_SHORT_NAME',
             ),
             1 =>

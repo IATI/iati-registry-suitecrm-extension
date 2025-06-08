@@ -369,24 +369,6 @@ $accounts_custom_fields = array(
     'studio' => true,
   ),
   array(
-    'name' => 'iati_short_name_c',
-    'label' => 'LBL_IATI_SHORT_NAME',
-    'type' => 'varchar',
-    'module' => 'Accounts',
-    'help' => 'Short name used to refer to organisation',
-    'comment' => '',
-    'default_value' => '',
-    'max_size' => 32,
-    'mass_update' => true,
-    'required' => false,
-    'reportable' => true,
-    'audited' => true,
-    'importable' => true,
-    'duplicate_merge' => false,
-    'inline_edit' => false,
-    'studio' => true,
-  ),
-  array(
     'name' => 'iati_registry_approved_c',
     'label' => 'LBL_IATI_REGISTRY_APPROVED',
     'type' => 'bool',
@@ -653,6 +635,10 @@ $installdefs = array(
   ),
 
   'vardefs' => array(
+    array(
+      'from' => '<basepath>/custom/modules/Accounts/Ext/Vardefs/iati_short_name.php',
+      'to_module' => 'Accounts',
+    ),
     array(
       'from' => '<basepath>/custom/relationships/vardefs/iati_datasets_accounts_IATI_Datasets.php',
       'to_module' => 'IATI_Datasets',

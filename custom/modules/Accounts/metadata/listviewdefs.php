@@ -9,7 +9,7 @@ array(
     'link' => true,
     'default' => true,
   ),
-  'IATI_SHORT_NAME_C' =>
+  'IATI_SHORT_NAME' =>
   array(
     'type' => 'varchar',
     'default' => true,
