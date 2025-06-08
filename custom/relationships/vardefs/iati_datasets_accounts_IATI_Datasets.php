@@ -10,8 +10,8 @@ $dictionary["IATI_Datasets"]["fields"]["iati_datasets_owner_org"] = array(
   'vname' => 'LBL_IATI_DATASETS_OWNER_ORG_FROM_ACCOUNTS_TITLE',
   'id_name' => 'iati_datasets_accountsaccounts_ida',
 );
-$dictionary["IATI_Datasets"]["fields"]["iati_datasets_owner_org_name"] = array(
-  'name' => 'iati_datasets_owner_org_name',
+$dictionary["IATI_Datasets"]["fields"]["owner_org_name"] = array(
+  'name' => 'owner_org_name',
   'type' => 'relate',
   'source' => 'non-db',
   'vname' => 'LBL_IATI_DATASETS_OWNER_ORG_FROM_ACCOUNTS_TITLE',

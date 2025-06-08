@@ -26,7 +26,7 @@ array(
     'width' => '10%',
     'default' => true,
   ),
-  'IATI_DATASETS_OWNER_ORG_NAME' =>
+  'OWNER_ORG_NAME' =>
   array(
     'type' => 'relate',
     'link' => true,
