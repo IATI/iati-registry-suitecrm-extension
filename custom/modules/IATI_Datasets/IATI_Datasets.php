@@ -75,6 +75,64 @@ class IATI_Datasets extends Basic
     public $iati_dataset_url;
     public $iati_visibility;
 
+    /**
+     * Counts the number of public datasets for the owner
+     * of this dataset.
+     * 
+     * This supports the storage and viewing of the number of public
+     * datasets alongside an Organisation (Account) record.  There
+     * might be better ways to implement this functionality.  Some
+     * thoughts here:
+     *
+     * 1. The field is added as a (custom) DB field in the Account
+     * module, whereas a non-db field might be better.
+     * 2. I'm adding this calculation here, whereas logically it
+     * probably should be in the Account class, but that would
+     * require modifying the existing module and I'm not sure
+     * whether that is possible for an extension.
+     * 3. I could implement as a logic hook, but it would be an
+     * `after_save` hook attached to a dataset - see (2) and I
+     * thought that it might as well go here since we're adding
+     * a custom module anyway.
+     * 
+     * @param string ID for the owner organisation $owner_org_id
+     * @return int Number of datasets.
+     */
+    public function count_num_public_datasets_for_owner($owner_org_id) {
+        $query = "SELECT COUNT(*) AS num_datasets
+                  FROM iati_datasets_owner_org_c o
+                  JOIN iati_datasets d
+                  ON d.id = o.iati_dataset_id
+                  WHERE o.owner_org_id = '" . $this->db->quote($owner_org_id) . "' AND d.iati_visibility='public' AND d.deleted=0";
+        $result = $this->db->query($query, true, ' Error finding datasets for org <' . $owner_org_id . '>: ');
+
+        if (!($result)) return NULL;
+
+        $row = $this->db->fetchByAssoc($result);
+        if (is_null($row["num_datasets"])) {
+            LoggerManager::getLogger()->error("IATI_Datasets::find_num_public_datasets_for_owner() - query result does not have num_datasets field");
+            return NULL;
+        }
+
+        return $row["num_datasets"];
+    }
+
+    public function save($check_notify = false)
+    {
+        $save_result = parent::save();
+
+        // update the number of public datasets field in the
+        // owner organisation record.
+        $num_datasets = $this->count_num_public_datasets_for_owner($this->owner_org_id);
+        if (!(is_null($num_datasets))) {
+            $bean = BeanFactory::getBean('Accounts', $this->owner_org_id);
+            $bean->iati_num_published_datasets_c = $num_datasets;
+            $bean->save();
+        }
+
+        return $save_result;
+    }
+
     public function bean_implements($interface)
     {
         switch ($interface) {

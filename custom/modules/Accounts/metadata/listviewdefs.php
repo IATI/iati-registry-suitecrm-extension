@@ -45,7 +45,15 @@ array(
     'default' => true,
     'studio' => 'visible',
     'label' => 'LBL_IATI_REGISTRY_APPROVED',
-    'width' => '10%'
+    'width' => '5%'
+  ),
+  'IATI_NUM_PUBLISHED_DATASETS_C' =>
+  array(
+    'type' => 'int',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_IATI_NUM_PUBLISHED_DATASETS',
+    'width' => '5%'
   ),
   'ACCOUNT_TYPE' =>
   array(

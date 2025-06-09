@@ -202,12 +202,25 @@ $viewdefs['Accounts'] =
             ),
             1 =>
             array(
+              'name' => 'iati_num_published_datasets_c',
+              'studio' => 'visible',
+              'label' => 'LBL_IATI_NUM_PUBLISHED_DATASETS',
+            ),
+          ),
+          2 =>
+          array(
+            0 =>
+            array(
               'name' => 'iati_reporting_source_type_c',
               'studio' => 'visible',
               'label' => 'LBL_IATI_REPORTING_SOURCE_TYPE',
             ),
+            1 => array(
+              'name' => 'iati_first_publish_date_c',
+              'label' => 'LBL_IATI_FIRST_PUBLISH_DATE',
+            ),
           ),
-          2 =>
+          3 =>
           array(
             0 =>
             array(
@@ -215,7 +228,7 @@ $viewdefs['Accounts'] =
               'label' => 'LBL_IATI_DATAPORTAL_URL',
             ),
           ),
-          3 =>
+          4 =>
           array(
             0 =>
             array(
@@ -223,21 +236,14 @@ $viewdefs['Accounts'] =
               'label' => 'LBL_IATI_EXCLUSIONS_POLICY_URL',
             ),
           ),
-          4 =>
-          array(
-            0 => array(
-              'name' => 'iati_first_publish_date_c',
-              'label' => 'LBL_IATI_FIRST_PUBLISH_DATE',
-            ),
-          ),
-          5 =>
-          array(
-            0 =>
-            array(
-              'name' => 'iati_ckan_id_c',
-              'label' => 'LBL_IATI_CKAN_ID',
-            ),
-          ),
+          // 5 =>
+          // array(
+          //   0 =>
+          //   array(
+          //     'name' => 'iati_ckan_id_c',
+          //     'label' => 'LBL_IATI_CKAN_ID',
+          //   ),
+          // ),
         ),
       ),
     )
