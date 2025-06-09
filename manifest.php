@@ -651,6 +651,9 @@ $installdefs = array(
     array(
       'meta_data' => '<basepath>/custom/relationships/relationships/iati_dataset_actions_actor_personMetaData.php',
     ),
+    array(
+      'meta_data' => '<basepath>/custom/relationships/relationships/iati_dataset_actions_owner_orgMetaData.php',
+    ),
   ),
 
   'vardefs' => array(
@@ -704,6 +707,14 @@ $installdefs = array(
     ),
     array(
       'from' => '<basepath>/custom/relationships/vardefs/iati_dataset_actions_actor_person_IATI_Dataset_Actions.php',
+      'to_module' => 'IATI_Dataset_Actions'
+    ),
+    array(
+      'from' => '<basepath>/custom/relationships/vardefs/iati_dataset_actions_owner_org_Accounts.php',
+      'to_module' => 'Accounts'
+    ),
+    array(
+      'from' => '<basepath>/custom/relationships/vardefs/iati_dataset_actions_owner_org_IATI_Dataset_Actions.php',
       'to_module' => 'IATI_Dataset_Actions'
     ),
   ),
