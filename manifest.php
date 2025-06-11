@@ -622,6 +622,10 @@ $installdefs = array(
   */
   'layoutdefs' => array(
     array(
+      'from' => '<basepath>/custom/relationships/layoutdefs/accounts_contacts_Contacts.php',
+      'to_module' => 'Contacts',
+    ),
+    array(
       'from' => '<basepath>/custom/relationships/layoutdefs/iati_datasets_contacts_Contacts.php',
       'to_module' => 'Contacts',
     ),
