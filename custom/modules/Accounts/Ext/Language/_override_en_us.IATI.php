@@ -39,3 +39,7 @@ $mod_strings['LBL_IATI_DATASETS_OWNER_ORG_FROM_IATI_DATASETS_TITLE'] = 'IATI Dat
 
 // labels for relating organisation actions to organisations
 $mod_strings['LBL_IATI_ORGANISATION_ACTIONS_CHANGED_ORG_FROM_IATI_ORGANISATION_ACTIONS_TITLE'] = 'IATI Organisation Changes';
+
+// labels for relating organisations to other organisations
+$mod_strings['LBL_ORGANISATION_RELATED_ORG_L_TITLE'] = 'Organisations';
+$mod_strings['LBL_ORGANISATION_RELATED_ORG_R_TITLE'] = 'Related Organisations';
