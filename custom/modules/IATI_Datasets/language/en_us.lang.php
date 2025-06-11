@@ -78,18 +78,19 @@ $mod_strings = array(
   'LBL_IATI_DATASETS_SUBPANEL_TITLE' => 'IATI Datasets',
   'LBL_NEW_FORM_TITLE' => 'New IATI Datasets',
   'LBL_IATI_CKAN_ID' => 'CKAN ID',
-  'LBL_IATI_LICENCE_ID' => 'Licence ID for the dataset',
+  'LBL_IATI_LICENCE_ID' => 'Licence',
   'LBL_METADATA_UPDATED' => 'Metadata update date',
   'LBL_METADATA_UPDATE_DATE' => 'Metadata update date',
-  'LBL_IATI_URL_UPDATE_DATE' => 'URL Update Date',
-  'LBL_IATI_METADATA_UPDATE_DATE' => 'Metadata Update Date',
-  'LBL_IATI_SHORT_NAME' => 'Short name for the dataset',
+  'LBL_IATI_URL_UPDATE_DATE' => 'Updated URL',
+  'LBL_IATI_METADATA_UPDATE_DATE' => 'Updated metadata',
+  'LBL_IATI_SHORT_NAME' => 'Short name',
   'LBL_IATI_SOURCE_TYPE' => 'Source type',
   'LBL_IATI_DATASET_URL' => 'Dataset URL',
   'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
   'LBL_IATI_DATASET_OWNER_ORG' => 'Owner Organisation',
   'LBL_IATI_DATASET_CREATOR_PERSON' => 'Creator Person',
-  'LBL_IATI_VISIBILITY' => 'Visibility'
+  'LBL_IATI_VISIBILITY' => 'Visibility',
+  'LBL_IATI_TOOL_BUTTONS' => 'IATI Tools'
 );
 
 // relationships
