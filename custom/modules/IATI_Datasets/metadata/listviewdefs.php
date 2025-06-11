@@ -23,7 +23,7 @@ array(
     'type' => 'enum',
     'studio' => 'visible',
     'label' => 'LBL_IATI_VISIBILITY',
-    'width' => '10%',
+    'width' => '5%',
     'default' => true,
   ),
   'OWNER_ORG_NAME' =>
@@ -62,6 +62,13 @@ array(
     'type' => 'url',
     'label' => 'LBL_IATI_DATASET_URL',
     'width' => '20%',
+    'default' => true,
+  ),
+  'IATI_TOOL_BUTTONS' =>
+  array(
+    'type' => 'varchar',
+    'label' => 'LBL_IATI_TOOL_BUTTONS',
+    'width' => '5%',
     'default' => true,
   ),
 );

@@ -15,6 +15,12 @@ array(
           1 => 'DUPLICATE',
           2 => 'DELETE',
           3 => 'FIND_DUPLICATES',
+          4 => array(
+            'customCode' => '<input id="validator_button" class="button" title="View on Validator" value="View on Validator" type="button" onclick="javascript:document.location=\'https://validator.iatistandard.org/report/{$fields.iati_short_name.value}\'"/>',
+          ),
+          5 => array(
+            'customCode' => '<input id="validator_button" class="button" title="View on Dashboard" value="View on Dashboard" type="button" onclick="javascript:document.location=\'https://dashboard.iatistandard.org\'"/>',
+          ),
         ),
       ),
       'maxColumns' => '2',

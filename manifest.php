@@ -603,6 +603,21 @@ $installdefs = array(
   ),
 
   /*
+  ** Setup custom logic hooks
+  */
+  'logic_hooks' => array(
+    array(
+      'module' => 'IATI_Datasets',
+      'hook' => 'process_record',
+      'order' => 77,
+      'description' => 'Add IATI Tool buttons to dataset list/subpanel view',
+      'file' => 'modules/IATI_Datasets/ToolButtonsHook.php',
+      'class' => 'ToolButtonsHook',
+      'function' => 'addButtons',
+    ),
+  ),
+
+  /*
   ** Layouts and variable definitions for the custom IATI modules.
   */
   'layoutdefs' => array(
