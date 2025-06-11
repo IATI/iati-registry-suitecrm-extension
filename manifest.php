@@ -24,7 +24,7 @@ $manifest = array(
   'name' => 'IATI_Registry',
   'published_date' => '2025-05-28',
   'type' => 'module',
-  'version' => '0.3.0',
+  'version' => '0.3.0-1f1c315',
   'remove_tables' => 'prompt',
   'copy_files' => array(
   )
