@@ -1,0 +1,18 @@
+$dictionary['Account']['fields']['iati_short_name'] = array(
+    'name' => 'iati_short_name',
+    'label' => 'LBL_IATI_SHORT_NAME',
+    'type' => 'varchar',
+    'module' => 'Accounts',
+    'help' => 'Short name used to refer to organisation',
+    'comment' => '',
+    'default_value' => '',
+    'max_size' => 32,
+    'mass_update' => true,
+    'required' => false,
+    'reportable' => true,
+    'audited' => true,
+    'importable' => true,
+    'duplicate_merge' => false,
+    'inline_edit' => false,
+    'studio' => true,
+  );

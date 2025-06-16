@@ -229,6 +229,12 @@ $dictionary['IATI_Datasets'] = array(
     'studio' => 'visible',
     'dependency' => false,
   ),
+  'iati_tool_buttons' => array(
+    'name' => 'iati_tool_buttons',
+    'vname' => 'LBL_IATI_TOOL_BUTTONS',
+    'type' => 'varchar',
+    'source' => 'non-db',
+  )
 ),
     'relationships' => array(
 ),

@@ -48,5 +48,14 @@ array(
     'width' => '10%',
     'default' => true,
   ),
+  'OWNER_ORG_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_IATI_DATASET_ACTIONS_OWNER_ORG_NAME',
+    'id' => 'OWNER_ORG_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
 );
 ;

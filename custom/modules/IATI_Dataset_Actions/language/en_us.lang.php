@@ -91,3 +91,4 @@ $mod_strings = array(
 // relationships
 $mod_strings['LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_FROM_CONTACTS_TITLE'] = 'People';
 $mod_strings['LBL_IATI_DATASET_ACTIONS_CHANGED_DATASET_FROM_IATI_DATASETS_TITLE'] = 'IATI Datasets';
+$mod_strings['LBL_IATI_DATASET_ACTIONS_OWNER_ORG_NAME'] = 'Organisation Name';

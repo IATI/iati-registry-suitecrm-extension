@@ -114,7 +114,7 @@ array(
         array(
           0 =>
           array(
-            'name' => 'iati_datasets_owner_org_name',
+            'name' => 'owner_org_name',
             'label' => 'LBL_IATI_DATASET_OWNER_ORG'
           ),
           1 =>

@@ -32,9 +32,14 @@ $mod_strings['LBL_IATI_REPORTING_SOURCE_TYPE'] = 'Reporting Source Type';
 $mod_strings['LBL_IATI_SHORT_NAME'] = 'Short Name';
 $mod_strings['LBL_IATI_REGISTRY_APPROVED'] = "Approved to publish";
 $mod_strings['LBL_IATI_REGION'] = 'Region';
+$mod_strings['LBL_IATI_NUM_PUBLISHED_DATASETS'] = 'Number of published datasets';
 
 // labels for relating datasets and dataset actions to organisations
 $mod_strings['LBL_IATI_DATASETS_OWNER_ORG_FROM_IATI_DATASETS_TITLE'] = 'IATI Datasets';
 
 // labels for relating organisation actions to organisations
 $mod_strings['LBL_IATI_ORGANISATION_ACTIONS_CHANGED_ORG_FROM_IATI_ORGANISATION_ACTIONS_TITLE'] = 'IATI Organisation Changes';
+
+// labels for relating organisations to other organisations
+$mod_strings['LBL_ORGANISATION_RELATED_ORG_L_TITLE'] = 'Organisations';
+$mod_strings['LBL_ORGANISATION_RELATED_ORG_R_TITLE'] = 'Related Organisations';
