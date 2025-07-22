@@ -55,26 +55,31 @@ $subpanel_layout = array(
     'where' => '',
 
     'list_fields' => array(
-        'name' => array(
-            'vname' => 'LBL_NAME',
+        'date_entered' => array(
+            'vname' => 'LBL_DATE_ENTERED',
             'widget_class' => 'SubPanelDetailViewLink',
-            'width' => '45%',
+            'width' => '15%',
         ),
-        'date_modified' => array(
-            'vname' => 'LBL_DATE_MODIFIED',
-            'width' => '45%',
+        'iati_dataset_actions_changed_dataset_name' => array(
+            'vname' => 'LBL_IATI_DATASET_ACTIONS_CHANGED_DATASET_NAME',
+            'width' => '15%',
         ),
-        'edit_button' => array(
-            'vname' => 'LBL_EDIT_BUTTON',
-            'widget_class' => 'SubPanelEditButton',
-            'module' => $module_name,
-            'width' => '4%',
+        'iati_action_type' => array(
+            'vname' => 'LBL_IATI_ACTION_TYPE',
+            'width' => '15%',
         ),
-        'remove_button' => array(
-            'vname' => 'LBL_REMOVE',
-            'widget_class' => 'SubPanelRemoveButton',
-            'module' => $module_name,
-            'width' => '5%',
+        'iati_dataset_actions_actor_person_name' => array(
+            'vname' => 'LBL_IATI_DATASET_ACTIONS_ACTOR_PERSON_NAME',
+            'width' => '20%',
         ),
+        'iati_user_application' => array(
+            'vname' => 'LBL_IATI_USER_APPLICATION',
+            'width' => '20%',
+        ),
+        'created_by_name' => array(
+            'vname' => 'LBL_CREATED',
+            'width' => '15%',
+        )
     ),
 );
+

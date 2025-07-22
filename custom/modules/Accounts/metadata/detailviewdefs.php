@@ -66,8 +66,8 @@ $viewdefs['Accounts'] =
       ),
 
       /*
-    ** this is the definition for each panel
-    */
+      ** this is the definition for each panel
+      */
       'panels' =>
       array(
         // overview of account information - each top level array is a row
@@ -116,9 +116,9 @@ $viewdefs['Accounts'] =
             ),
             1 =>
             array(
-              'name' => 'iati_org_type_c',
+              'name' => 'iati_region_c',
               'studio' => 'visible',
-              'label' => 'LBL_IATI_ORG_TYPE',
+              'label' => 'LBL_IATI_REGION',
             ),
           ),
           4 =>
@@ -130,8 +130,9 @@ $viewdefs['Accounts'] =
             ),
             1 =>
             array(
-              'name' => 'iati_short_name_c',
-              'label' => 'LBL_IATI_SHORT_NAME',
+              'name' => 'iati_org_type_c',
+              'studio' => 'visible',
+              'label' => 'LBL_IATI_ORG_TYPE',
             ),
           ),
           5 =>
@@ -188,12 +189,13 @@ $viewdefs['Accounts'] =
           array(
             0 =>
             array(
+              'name' => 'iati_short_name',
+              'label' => 'LBL_IATI_SHORT_NAME',
+            ),
+            1 =>
+            array(
               'name' => 'iati_registry_approved_c',
               'label' => 'LBL_IATI_REGISTRY_APPROVED',
-            ),
-            1 => array(
-              'name' => 'iati_first_publish_date_c',
-              'label' => 'LBL_IATI_FIRST_PUBLISH_DATE',
             ),
           ),
           1 =>
@@ -206,12 +208,25 @@ $viewdefs['Accounts'] =
             ),
             1 =>
             array(
+              'name' => 'iati_num_published_datasets_c',
+              'studio' => 'visible',
+              'label' => 'LBL_IATI_NUM_PUBLISHED_DATASETS',
+            ),
+          ),
+          2 =>
+          array(
+            0 =>
+            array(
               'name' => 'iati_reporting_source_type_c',
               'studio' => 'visible',
               'label' => 'LBL_IATI_REPORTING_SOURCE_TYPE',
             ),
+            1 => array(
+              'name' => 'iati_first_publish_date_c',
+              'label' => 'LBL_IATI_FIRST_PUBLISH_DATE',
+            ),
           ),
-          2 =>
+          3 =>
           array(
             0 =>
             array(
@@ -219,7 +234,7 @@ $viewdefs['Accounts'] =
               'label' => 'LBL_IATI_DATAPORTAL_URL',
             ),
           ),
-          3 =>
+          4 =>
           array(
             0 =>
             array(
@@ -227,14 +242,14 @@ $viewdefs['Accounts'] =
               'label' => 'LBL_IATI_EXCLUSIONS_POLICY_URL',
             ),
           ),
-          4 =>
-          array(
-            0 =>
-            array(
-              'name' => 'iati_ckan_id_c',
-              'label' => 'LBL_IATI_CKAN_ID',
-            ),
-          ),
+          // 5 =>
+          // array(
+          //   0 =>
+          //   array(
+          //     'name' => 'iati_ckan_id_c',
+          //     'label' => 'LBL_IATI_CKAN_ID',
+          //   ),
+          // ),
         ),
       ),
     )

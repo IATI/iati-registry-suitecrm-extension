@@ -1,24 +1,24 @@
 <?php
 
-$dictionary["iati_datasets_owner_org"] = array(
+$dictionary["iati_dataset_actions_owner_org"] = array(
   'true_relationship_type' => 'one-to-many',
   'relationships' =>
   array(
-    'iati_datasets_owner_org' =>
+    'iati_dataset_actions_owner_org' =>
     array(
       'lhs_module' => 'Accounts',
       'lhs_table' => 'accounts',
       'lhs_key' => 'id',
-      'rhs_module' => 'IATI_Datasets',
-      'rhs_table' => 'iati_datasets',
+      'rhs_module' => 'IATI_Dataset_Actions',
+      'rhs_table' => 'iati_dataset_actions',
       'rhs_key' => 'id',
       'relationship_type' => 'many-to-many',
-      'join_table' => 'iati_datasets_owner_org_c',
+      'join_table' => 'iati_dataset_actions_owner_org_c',
       'join_key_lhs' => 'owner_org_id',
-      'join_key_rhs' => 'iati_dataset_id',
+      'join_key_rhs' => 'iati_dataset_action_id',
     ),
   ),
-  'table' => 'iati_datasets_owner_org_c',
+  'table' => 'iati_dataset_actions_owner_org_c',
   'fields' =>
   array(
     0 =>
@@ -48,7 +48,7 @@ $dictionary["iati_datasets_owner_org"] = array(
     ),
     4 =>
     array(
-      'name' => 'iati_dataset_id',
+      'name' => 'iati_dataset_action_id',
       'type' => 'varchar',
       'len' => 36,
     ),
@@ -57,7 +57,7 @@ $dictionary["iati_datasets_owner_org"] = array(
   array(
     0 =>
     array(
-      'name' => 'iati_datasets_owner_orgspk',
+      'name' => 'iati_dataset_actions_owner_orgspk',
       'type' => 'primary',
       'fields' =>
       array(
@@ -66,7 +66,7 @@ $dictionary["iati_datasets_owner_org"] = array(
     ),
     1 =>
     array(
-      'name' => 'iati_datasets_owner_org_ida1',
+      'name' => 'iati_dataset_actions_owner_org_ida1',
       'type' => 'index',
       'fields' =>
       array(
@@ -75,11 +75,11 @@ $dictionary["iati_datasets_owner_org"] = array(
     ),
     2 =>
     array(
-      'name' => 'iati_datasets_owner_org_alt',
+      'name' => 'iati_dataset_actions_owner_org_alt',
       'type' => 'alternate_key',
       'fields' =>
       array(
-        0 => 'iati_dataset_id',
+        0 => 'iati_dataset_action_id',
       ),
     ),
   ),

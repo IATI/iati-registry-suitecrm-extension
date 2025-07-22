@@ -22,9 +22,9 @@ $manifest = array(
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'IATI_Registry',
-  'published_date' => '2025-04-28',
+  'published_date' => '2025-05-28',
   'type' => 'module',
-  'version' => '0.2.0',
+  'version' => '0.3.0-1f1c315',
   'remove_tables' => 'prompt',
   'copy_files' => array(
   )
@@ -207,6 +207,25 @@ $accounts_custom_fields = array(
     'studio' => true,
   ),
   array(
+    'name' => 'iati_num_published_datasets_c',
+    'label' => 'LBL_IATI_NUM_PUBLISHED_DATASETS',
+    'type' => 'int',
+    'default_value' => 0,
+    'len' => 4,
+    'module' => 'Accounts',
+    'help' => 'Number of published datasets',
+    'comment' => '',
+    'default_value' => '',
+    'enable_range_search' => true,
+    'required' => false,
+    'reportable' => false,
+    'audited' => false,
+    'importable' => true,
+    'duplicate_merge' => false,
+    'inline_edit' => false,
+    'studio' => true,
+  ),
+  array(
     'name' => 'iati_dataportal_url_c',
     'label' => 'LBL_IATI_DATAPORTAL_URL',
     'type' => 'url',
@@ -297,6 +316,24 @@ $accounts_custom_fields = array(
     'studio' => true,
   ),
   array(
+    'name' => 'iati_region_c',
+    'label' => 'LBL_IATI_REGION',
+    'type' => 'enum',
+    'module' => 'Accounts',
+    'help' => 'Region for this organisation',
+    'comment' => '',
+    'ext1' => 'iati_region_dom',
+    'default_value' => '',
+    'mass_update' => true,
+    'required' => false,
+    'reportable' => true,
+    'audited' => true,
+    'importable' => true,
+    'duplicate_merge' => false,
+    'inline_edit' => true,
+    'studio' => true,
+  ),
+  array(
     'name' => 'iati_identifier_c',
     'label' => 'LBL_IATI_IDENTIFIER',
     'type' => 'varchar',
@@ -348,24 +385,6 @@ $accounts_custom_fields = array(
     'importable' => true,
     'duplicate_merge' => false,
     'inline_edit' => true,
-    'studio' => true,
-  ),
-  array(
-    'name' => 'iati_short_name_c',
-    'label' => 'LBL_IATI_SHORT_NAME',
-    'type' => 'varchar',
-    'module' => 'Accounts',
-    'help' => 'Short name used to refer to organisation',
-    'comment' => '',
-    'default_value' => '',
-    'max_size' => 32,
-    'mass_update' => true,
-    'required' => false,
-    'reportable' => true,
-    'audited' => true,
-    'importable' => true,
-    'duplicate_merge' => false,
-    'inline_edit' => false,
     'studio' => true,
   ),
   array(
@@ -584,9 +603,28 @@ $installdefs = array(
   ),
 
   /*
+  ** Setup custom logic hooks
+  */
+  'logic_hooks' => array(
+    array(
+      'module' => 'IATI_Datasets',
+      'hook' => 'process_record',
+      'order' => 77,
+      'description' => 'Add IATI Tool buttons to dataset list/subpanel view',
+      'file' => 'modules/IATI_Datasets/ToolButtonsHook.php',
+      'class' => 'ToolButtonsHook',
+      'function' => 'addButtons',
+    ),
+  ),
+
+  /*
   ** Layouts and variable definitions for the custom IATI modules.
   */
   'layoutdefs' => array(
+    array(
+      'from' => '<basepath>/custom/relationships/layoutdefs/accounts_contacts_Contacts.php',
+      'to_module' => 'Contacts',
+    ),
     array(
       'from' => '<basepath>/custom/relationships/layoutdefs/iati_datasets_contacts_Contacts.php',
       'to_module' => 'Contacts',
@@ -611,6 +649,10 @@ $installdefs = array(
       'from' => '<basepath>/custom/relationships/layoutdefs/iati_dataset_actions_changed_dataset_IATI_Datasets.php',
       'to_module' => 'IATI_Datasets',
     ),
+    array(
+      'from' => '<basepath>/custom/relationships/layoutdefs/organisation_related_org_Accounts.php',
+      'to_module' => 'Accounts',
+    ),
   ),
 
   'relationships' => array(
@@ -632,9 +674,19 @@ $installdefs = array(
     array(
       'meta_data' => '<basepath>/custom/relationships/relationships/iati_dataset_actions_actor_personMetaData.php',
     ),
+    array(
+      'meta_data' => '<basepath>/custom/relationships/relationships/iati_dataset_actions_owner_orgMetaData.php',
+    ),
+    array(
+      'meta_data' => '<basepath>/custom/relationships/relationships/organisation_related_orgMetaData.php'
+    )
   ),
 
   'vardefs' => array(
+    array(
+      'from' => '<basepath>/custom/modules/Accounts/Ext/Vardefs/iati_short_name.php',
+      'to_module' => 'Accounts',
+    ),
     array(
       'from' => '<basepath>/custom/relationships/vardefs/iati_datasets_accounts_IATI_Datasets.php',
       'to_module' => 'IATI_Datasets',
@@ -682,6 +734,18 @@ $installdefs = array(
     array(
       'from' => '<basepath>/custom/relationships/vardefs/iati_dataset_actions_actor_person_IATI_Dataset_Actions.php',
       'to_module' => 'IATI_Dataset_Actions'
+    ),
+    array(
+      'from' => '<basepath>/custom/relationships/vardefs/iati_dataset_actions_owner_org_Accounts.php',
+      'to_module' => 'Accounts'
+    ),
+    array(
+      'from' => '<basepath>/custom/relationships/vardefs/iati_dataset_actions_owner_org_IATI_Dataset_Actions.php',
+      'to_module' => 'IATI_Dataset_Actions'
+    ),
+    array(
+      'from' => '<basepath>/custom/relationships/vardefs/organisation_related_org_Accounts.php',
+      'to_module' => 'Accounts'
     ),
   ),
 

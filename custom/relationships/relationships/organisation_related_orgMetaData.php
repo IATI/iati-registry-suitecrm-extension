@@ -1,24 +1,24 @@
 <?php
 
-$dictionary["iati_datasets_owner_org"] = array(
-  'true_relationship_type' => 'one-to-many',
+$dictionary["organisation_related_org"] = array(
+  'true_relationship_type' => 'many-to-many',
   'relationships' =>
   array(
-    'iati_datasets_owner_org' =>
+    'organisation_related_org' =>
     array(
       'lhs_module' => 'Accounts',
       'lhs_table' => 'accounts',
       'lhs_key' => 'id',
-      'rhs_module' => 'IATI_Datasets',
-      'rhs_table' => 'iati_datasets',
+      'rhs_module' => 'Accounts',
+      'rhs_table' => 'accounts',
       'rhs_key' => 'id',
       'relationship_type' => 'many-to-many',
-      'join_table' => 'iati_datasets_owner_org_c',
-      'join_key_lhs' => 'owner_org_id',
-      'join_key_rhs' => 'iati_dataset_id',
+      'join_table' => 'organisation_related_org_c',
+      'join_key_lhs' => 'organisation_ida',
+      'join_key_rhs' => 'organisation_idb',
     ),
   ),
-  'table' => 'iati_datasets_owner_org_c',
+  'table' => 'organisation_related_org_c',
   'fields' =>
   array(
     0 =>
@@ -42,13 +42,13 @@ $dictionary["iati_datasets_owner_org"] = array(
     ),
     3 =>
     array(
-      'name' => 'owner_org_id',
+      'name' => 'organisation_ida',
       'type' => 'varchar',
       'len' => 36,
     ),
     4 =>
     array(
-      'name' => 'iati_dataset_id',
+      'name' => 'organisation_idb',
       'type' => 'varchar',
       'len' => 36,
     ),
@@ -57,7 +57,7 @@ $dictionary["iati_datasets_owner_org"] = array(
   array(
     0 =>
     array(
-      'name' => 'iati_datasets_owner_orgspk',
+      'name' => 'organisation_related_orgspk',
       'type' => 'primary',
       'fields' =>
       array(
@@ -66,20 +66,12 @@ $dictionary["iati_datasets_owner_org"] = array(
     ),
     1 =>
     array(
-      'name' => 'iati_datasets_owner_org_ida1',
-      'type' => 'index',
-      'fields' =>
-      array(
-        0 => 'owner_org_id',
-      ),
-    ),
-    2 =>
-    array(
-      'name' => 'iati_datasets_owner_org_alt',
+      'name' => 'organisation_related_org_alt',
       'type' => 'alternate_key',
       'fields' =>
       array(
-        0 => 'iati_dataset_id',
+        0 => 'organisation_ida',
+        1 => 'organisation_idb',
       ),
     ),
   ),

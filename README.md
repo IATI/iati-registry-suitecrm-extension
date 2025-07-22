@@ -31,8 +31,11 @@ Browse for the extension zip file, `dist/iati-registry-suitecrm-extension.zip`, 
 
 ![Module Loader screen in SuiteCRM](module-loader.png)
 
-After that you should see "Module Installed Successfully" then click on the home icon at the top of the screen to return to the home page of the CRM.
+After that you should see "Module Installed Successfully".  Because the `iati_short_name` field in the `Organisation` (`Account`) module is added manually rather than via the other custom fields in `manifest.php` the field must be manually added to the database.  To do this navigate to the *Repair* section in the *Administration* page and click on *Quick Repair and Rebuild*.  This will analyse the differences between the defined field and those in the database and presents an option to execute the generated SQL.  The page should look like below:
 
+![Quick Repair and Rebuild screen in SuiteCRM](quick-repair-and-rebuild.png)
+
+Once you have executed this SQL you can click on the home icon at the top of the screen to return to the home page of the CRM.
 
 ### Rebuilding
 To rebuild the extension from scratch use the provided `Makefile`.
